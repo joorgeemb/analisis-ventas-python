@@ -1,31 +1,32 @@
-# Análisis de ventas: depuración y hallazgos
+# Sales analysis: data cleaning and findings
 
-Depuración completa y análisis de un dataset de ventas de 4.215 registros
-(2024-2025) con problemas típicos de exportación: columnas numéricas
-almacenadas como texto, categorías inconsistentes, fechas en tres formatos
-y valores imposibles.
+🇪🇸 [Leer en español](README.es.md)
 
-## Resultados
+Full cleaning and analysis of a 4,215-record sales dataset (2024-2025)
+with typical export issues: numeric columns stored as text, inconsistent
+categories, dates in three different formats, and impossible values.
 
-- **Corrección de un error del 1.200%** en el indicador de unidades por
-  operación (40,3 registradas frente a 3,0 reales). Cualquier informe
-  elaborado sin depuración previa habría comunicado esa cifra.
-- **Detección de una política de descuentos no justificada por volumen:**
-  el canal mayorista opera con un descuento uniforme del 18% y adquiere
-  3,03 unidades por operación, frente a 3,01 en los canales minoristas.
+## Results
 
-## Contenido
+- **Corrected a 1,200% error** in the units-per-transaction metric (40.3
+  recorded vs. 3.0 real). Any report built without prior cleaning would
+  have reported that figure.
+- **Detected a discount policy not justified by volume:** the wholesale
+  channel runs a flat 18% discount and buys 3.03 units per transaction,
+  versus 3.01 in retail channels.
 
-| Archivo | Descripción |
+## Contents
+
+| File | Description |
 |---|---|
-| `limpieza_ventas.ipynb` | Notebook con el proceso completo y los hallazgos |
-| `ventas_sucio.csv` | Datos de partida |
-| `ventas_limpio.csv` | Conjunto depurado |
+| `limpieza_ventas.ipynb` | Notebook with the full process and findings |
+| `ventas_sucio.csv` | Raw data |
+| `ventas_limpio.csv` | Cleaned dataset |
 
-## Herramientas
+## Tools
 
 Python · pandas · matplotlib
 
 ---
 
-*Dataset simulado con problemas de calidad representativos de exportaciones reales.*
+*Simulated dataset with quality issues representative of real-world exports.*
